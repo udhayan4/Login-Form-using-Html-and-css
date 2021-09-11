@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background: rgba(187, 187, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.26);
+    color: white;
+}
+
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background: rgba(0, 0, 100, 0.8);
+    backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card h2 {
+    font-weight: normal;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    display: flex;
+    color: darkturquoise;
+    font-weight: 600;
+}
+
+.input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid orangered;
+    margin: 20px 0;
+    height: 30px;
+    border-radius: 40px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    justify-content: center;
+    color: chartreuse;
+    font-size: larger;
+}
+
+::placeholder {
+    color: burlywood;
+}
+
+button {
+    background: transparent;
+    width: 70%;
+    border: 1px solid;
+    margin: 40px;
+    padding: 0 0;
+    height: 32px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background-color: darkblue;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.submit {
+    position: relative;
+}
+
+.submit::after {
+    content: '\27a4';
+    line-height: 32px;
+    font-size: 23px;
+    color: black;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+    right: -1px;
+    top: -1px;
+}
+
+span {
+    font-size: 14px;
+    margin-left: 17px;
+}
+
+.card .btn {
+    margin-top: 20px;
+}
+
+.card a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+}
