@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.image {
+    background: url('mountain.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.image::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1000;
+    padding: 60px 32px;
+    align-items: center;
+    width: 375px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.content header {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    margin: 0 0 35px 0;
+    cursor: pointer;
+}
+
+.content header:hover {
+    text-decoration: underline;
+}
+
+.field {
+    padding: 10px 10px;
+    width: 100%;
+    display: flex;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.field input {
+    height: 100%;
+    width: 200%;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: black;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.space {
+    margin-top: 17px;
+}
+
+.pass {
+    margin: 20px 20px;
+    align-items: left;
+    text-align: left;
+    justify-content: left;
+    cursor: pointer;
+}
+
+.pass a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.pass a:hover {
+    text-decoration: underline;
+}
+
+form .btn {
+    margin: 20px 0;
+    height: 45%;
+    width: 100%;
+}
+
+form .btn .inner {
+    width: 100%;
+    height: 100%;
+}
+
+form .btn button {
+    padding: 6px 9px;
+    align-items: center;
+    margin: 30px 30px;
+    justify-content: center;
+    width: 80%;
+    background-color: cadetblue;
+    color: yellow;
+    font-size: 20px;
+    justify-content: center;
+    font-weight: 600px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+form .btn button:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.social h3 {
+    color: white;
+    padding: 20px 20px;
+    margin: 20px;
+}
+
+.signup {
+    color: white;
+    padding: 7px;
+    margin: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signup a {
+    color: aqua;
+    text-decoration: none;
+}
+
+.box a {
+    margin: 12px;
+    width: 100%;
+}
+
+.box a:hover {
+    color: chartreuse;
+}
